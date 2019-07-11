@@ -1,6 +1,7 @@
 # statistical-analysis
 
-TODO: Write a description here
+A set of functions for statistical analysis
+** Created just for fun 😃
 
 ## Installation
 
@@ -9,31 +10,29 @@ TODO: Write a description here
    ```yaml
    dependencies:
      statistical-analysis:
-       github: your-github-user/statistical-analysis
+       github: ouracademy/statistical-analysis
    ```
 
 2. Run `shards install`
 
 ## Usage
 
+See the spec files for more documentation
+
 ```crystal
 require "statistical-analysis"
+
+# Factorial
+5.factorial # Object (OO) way
+Math.factorial(5) # Functional (FP) way
+
 ```
 
-TODO: Write usage instructions here
-
-## Development
-
-TODO: Write development instructions here
 
 ## Contributing
 
-1. Fork it (<https://github.com/your-github-user/statistical-analysis/fork>)
+1. Fork it (<https://github.com/ouracademy/statistical-analysis/fork>)
 2. Create your feature branch (`git checkout -b my-new-feature`)
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)
 5. Create a new Pull Request
-
-## Contributors
-
-- [artmadeit](https://github.com/your-github-user) - creator and maintainer
