@@ -1,14 +1,12 @@
 module Math
-  # A factorial(N) = 1x2x3x...xN
-  def factorial
-    return factorial(self)
-  end
-
+  #  n! = 1 x 2 x 3... n
   def factorial(n)
-    return n == 0 ? 1 : n * factorial(n - 1)
+    n == 0 ? 1 : n * factorial(n - 1)
   end
 end
 
-abstract struct Number
-  include Math
+struct Int32
+  def factorial
+    Math.factorial(self)
+  end
 end
