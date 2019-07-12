@@ -2,11 +2,19 @@ require "./spec_helper"
 
 describe Math do
 
-  it "correctly do factorial in object oriented form" do
+  it "correctly do permutation in object oriented form" do
     4.permutation(k: 3).should eq 24
   end
 
-  it "correctly do factorial in functional" do
+  it "correctly do permutation in functional" do
     Math.permutation(4, 3).should eq 24
+  end
+
+  it "correctly do combination in object oriented form" do
+    4.combination(r: 3).should eq 4
+  end
+
+  it "correctly do combination in functional" do
+    Math.combination(4, 3).should eq 4
   end
 end
