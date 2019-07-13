@@ -26,6 +26,15 @@ require "statistical-analysis"
 5.factorial # Object (OO) way
 Math.factorial(5) # Functional (FP) way
 
+# Permutation
+# In math: n P r or  P(n,r)  
+4.permutation(r: 3)    # 24
+Math.permutation(4, 3)
+
+# n C r or C(n,r) 
+4.combination(r: 3) # 4
+Math.combination(4, 3)
+
 ```
 
 
