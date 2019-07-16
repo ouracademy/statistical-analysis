@@ -25,7 +25,10 @@ require "statistical-analysis"
 # Factorial
 5.factorial # Object (OO) way
 Math.factorial(5) # Functional (FP) way
+```
 
+### Probabilities
+```crystal
 # Permutation
 # In math: n P r or  P(n,r)  
 4.permutation(r: 3)    # 24
@@ -34,7 +37,19 @@ Math.permutation(4, 3)
 # n C r or C(n,r) 
 4.combination(r: 3) # 4
 Math.combination(4, 3)
+```
 
+### Distributions
+```crystal
+# Binomial 
+x = 2
+p = binomial_distribution(trials: 5, success_probability: 0.1)
+p.call(x) # approx. 0.0729, note syntax like math: p(x)
+
+
+# Test if some function is a distribution function
+X = [2, 3, 4, 5, 6] # given some discrete sample (X)
+DistributionFunction.is?(X){ |x| 5.2551 / x ** 3 } # true
 ```
 
 
