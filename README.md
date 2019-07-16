@@ -39,6 +39,20 @@ Math.permutation(4, 3)
 Math.combination(4, 3)
 ```
 
+### Series & Statistics
+```crystal
+# OO
+X = [20, 23, 21, 22]
+X.mean
+X.standard_deviation # or alias X.std_dev
+
+# FP
+# if you include the Stats module or else Stats.mean(X)
+include Stats
+mean(X)
+standard_deviation(X) # or alias std_dev(X)
+```
+
 ### Distributions
 ```crystal
 # Binomial 
@@ -51,7 +65,6 @@ p.call(x) # approx. 0.0729, note syntax like math: p(x)
 X = [2, 3, 4, 5, 6] # given some discrete sample (X)
 DistributionFunction.is?(X){ |x| 5.2551 / x ** 3 } # true
 ```
-
 
 ## Contributing
 
