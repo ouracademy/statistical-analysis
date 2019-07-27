@@ -43,13 +43,13 @@ Math.combination(4, 3)
 ```crystal
 # OO
 X = [20, 23, 21, 22]
-X.mean
+X.mean # also you can use X.harmonic_mean
 X.standard_deviation # or alias X.std_dev
 
 # FP
 # if you include the Stats module or else Stats.mean(X)
 include Stats
-mean(X)
+mean(X) # also you can use harmonic_mean(X)
 standard_deviation(X) # or alias std_dev(X)
 ```
 
