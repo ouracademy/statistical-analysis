@@ -2,6 +2,7 @@ require "./factorial"
 
 module Math
   def permutation(n, r)
+    raise ArgumentError.new("n ≥ r ≥ 0") unless n >= r && r >= 0
     return n.factorial / (n - r).factorial
   end
 
