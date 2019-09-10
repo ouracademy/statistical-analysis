@@ -3,7 +3,7 @@ require "./spec_helper"
 describe Math do
 
   it "correctly do permutation in object oriented form" do
-    4.permutation(k: 3).should eq 24
+    4.permutation(r: 3).should eq 24
   end
 
   it "correctly do permutation in functional" do

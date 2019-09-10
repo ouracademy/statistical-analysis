@@ -1,8 +1,8 @@
 require "./factorial"
 
 module Math
-  def permutation(n, k)
-    return n.factorial / (n - k).factorial
+  def permutation(n, r)
+    return n.factorial / (n - r).factorial
   end
 
   def combination(n, r)
@@ -11,8 +11,8 @@ module Math
 end
 
 struct Int32
-  def permutation(k)
-    Math.permutation(self, k)
+  def permutation(r)
+    Math.permutation(self, r)
   end
 
   def combination(r)
