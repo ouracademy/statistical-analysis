@@ -14,8 +14,7 @@ module Enumerable(Number)
   # Deviation from the mean.
   def variance
     return 0.0_f64 if empty?
-    mean = mean()
-    self.map { |e| (e - mean) ** 2 }.mean
+    self.map { |x| (x - mean) ** 2 }.mean
   end
 
   def standard_deviation

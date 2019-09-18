@@ -60,6 +60,8 @@ x = 2
 p = binomial_distribution(trials: 5, success_probability: 0.1)
 p.call(x) # approx. 0.0729, note syntax like math: p(x)
 
+p = bernoulli_distribution(success_probability: 0.7)
+p.call(0) # 0.3
 
 # Test if some function is a distribution function
 X = [2, 3, 4, 5, 6] # given some discrete sample (X)
