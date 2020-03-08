@@ -1,5 +1,6 @@
 module Stats
   extend self
+
   def mean(enumerable : Enumerable(Number))
     enumerable.mean
   end

@@ -20,6 +20,7 @@ module Enumerable(Number)
   def standard_deviation
     Math.sqrt variance
   end
+
   def std_dev
     standard_deviation
   end

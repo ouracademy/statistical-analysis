@@ -1,6 +1,5 @@
 require "./spec_helper"
 
-
 describe "bernoulli distribution" do
   it "equals 0.3=p(0) and 0.7=p(1)" do
     p = bernoulli_distribution(success_probability: 0.7)

@@ -1,7 +1,6 @@
 require "./spec_helper"
 
 describe Math do
-
   it "correctly do factorial in object oriented form" do
     3.factorial.should eq 6
     0.factorial.should eq 1

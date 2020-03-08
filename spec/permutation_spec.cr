@@ -1,7 +1,6 @@
 require "./spec_helper"
 
 describe Math do
-
   it "correctly do permutation in object oriented form" do
     4.permutation(r: 3).should eq 24
   end
@@ -21,7 +20,6 @@ describe Math do
       -1.permutation(r: 0)
     end
   end
-
 
   it "correctly do combination in object oriented form" do
     4.combination(r: 3).should eq 4
